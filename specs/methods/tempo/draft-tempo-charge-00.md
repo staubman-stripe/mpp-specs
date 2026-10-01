@@ -555,8 +555,10 @@ When `feePayer: true`:
 ## Client-Paid Fees
 
 When `feePayer: false` or omitted, the client MUST set `fee_token` to a
-valid USD TIP-20 token address and pay fees themselves. The server
-broadcasts the transaction as-is without adding a fee payer signature.
+valid USD TIP-20 token address and arrange payment of the fees, either
+by paying the fees themselves or by obtaining a fee payer signature
+from a sponsor. The server broadcasts the transaction as-is without
+adding a fee payer signature.
 
 ## Server Requirements
 
